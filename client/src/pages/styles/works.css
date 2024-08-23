@@ -1,0 +1,121 @@
+/* works.css */
+
+/* General styles for the page */
+.page-content {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Ensure there's no extra margin */
+    padding: 0; /* Remove default padding */
+}
+
+.content-wrapper {
+    padding: 20px;
+}
+
+/* Styling for the logo and title section */
+.works-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.works-logo {
+    margin-right: 10px;
+}
+
+.works-main-container {
+    margin-top: 20px;
+}
+
+/* Title and subtitle styling */
+.works-title {
+    font-size: 28px; /* Slightly larger font size for title */
+    font-weight: bold;
+    margin-top: 20px; /* Margin to push title down */
+}
+
+.works-subtitle {
+    font-size: 16px; /* Font size for subtitle */
+    font-weight: bold; /* Make subtitle bold */
+    color: #333; /* Subtitle color */
+    margin-bottom: 5px; /* Space below subtitle */
+}
+
+/* Work container styling */
+.works-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Increased space between items */
+}
+
+/* Each work item styling */
+.work {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; /* Space between details and description */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly larger border radius for rounded corners */
+    padding: 30px; /* Increased padding for larger boxes */
+    background-color: #f9f9f9;
+    align-items: flex-start;
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    margin-bottom: 40px; /* Added margin to create gap between items */
+}
+
+/* Work details section styling */
+.work-details {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px; /* Increased max-width for details section */
+    margin-right: 20px; /* Space between details and description */
+}
+
+/* Adjusting spacing for duration, title, and subtitle */
+.work-duration {
+    font-size: 16px; /* Font size for duration */
+    font-weight: bold; /* Make duration bold */
+    color: #333; /* Color for duration */
+    margin-bottom: 5px; /* Space below duration */
+}
+
+.work-subtitle {
+    font-size: 16px; /* Font size for subtitle */
+    font-weight: bold; /* Make subtitle bold */
+    color: #333; /* Color for subtitle */
+    margin-bottom: 10px; /* Space below subtitle */
+}
+
+.work-title {
+    font-size: 18px; /* Font size for title */
+    font-weight: bold;
+    margin-top: 10px; /* Margin to push title down */
+    margin-bottom: 10px; /* Margin below title */
+}
+
+/* Work description section styling */
+.work-description {
+    flex: 1;
+    font-size: 16px; /* Consistent font size for description */
+    color: #333;
+    margin-left: 30px; /* Space between details and description */
+    overflow-wrap: break-word; /* Ensure long words are broken */
+}
+
+/* Ensure each section covers full height of the page */
+.page-footer {
+    margin-top: 20px;
+}
+
+/* Optional: Make sure the footer is at the bottom */
+html, body {
+    height: 100%;
+}
+
+.content-wrapper {
+    min-height: calc(100vh - 60px); /* Adjust based on footer height */
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+}
