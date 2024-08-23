@@ -1,0 +1,9 @@
+[build]
+  base = "client"         # Base directory for the build
+  command = "npm run build" # Build command
+  publish = "client/build" # Directory to publish
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
