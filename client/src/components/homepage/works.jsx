@@ -8,33 +8,24 @@ import "./styles/works.css";
 const Works = () => {
 	return (
 		<div className="works">
+			<h2 className="projects-title">Work Experience</h2>
 			<Card
 				icon={faBriefcase}
 				title="Work"
 				body={
 					<div className="works-body">
 						<div className="work">
-							{/* <img
-								// src="./facebook.png"
-								alt="facebook"
-								className="work-image"
-							/> */}
 							<div className="work-title">TCS</div>
 							<div className="work-subtitle">
-								Frontend Developer
+								Full Stack Developer
 							</div>
 							<div className="work-duration">2020 - 2022</div>
 						</div>
 
 						<div className="work">
-							{/* <img
-								// src="./twitter.png"
-								alt="twitter"
-								className="work-image"
-							/> */}
 							<div className="work-title">Triculin Technologies</div>
 							<div className="work-subtitle">
-								Developer
+								Software Developer
 							</div>
 							<div className="work-duration">2019 - 2020</div>
 						</div>
