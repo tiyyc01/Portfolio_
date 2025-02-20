@@ -1,72 +1,72 @@
-@import "../../../data/styles.css";
-
-.project {
-	mix-blend-mode: normal;
-	border-radius: 20px;
-	opacity: 0.8;
-	height: 100%;
+.project-card {
+	background: #ffffff;
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	text-align: center;
 }
 
-.project a {
-	text-decoration: none;
-}
-
-.project:hover {
-	background: #fafafa;
-	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
-}
-
-.project:hover .project-link {
-	color: var(--link-color);
-	transition: color 0.3s ease-in-out;
+.project-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .project-container {
-	padding: 30px;
-}
-
-.project-logo {
-	width: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .project-logo img {
-	width: 100%;
+	width: 70px;
+	height: auto;
+	margin-bottom: 15px;
 }
 
 .project-title {
-	font-family: var(--secondary-font);
-	color: var(--primary-color);
-	font-size: 16px;
-	padding-top: 15px;
-	margin-bottom: 1em;
-	font-weight: 700;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #2c3e50;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 .project-description {
-	color: var(--secondary-color);
+	text-align: left;
+	font-size: 1rem;
+	color: #555;
+	margin-bottom: 15px;
+	line-height: 1.5;
+}
+
+.project-description ul {
+	list-style-type: disc;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.project-description ul li {
+	margin-bottom: 5px;
+	text-decoration: none;
 }
 
 .project-link {
 	display: flex;
 	align-items: center;
-	color: var(--secondary-color);
-	font-size: 12px;
-	padding-top: 20px;
+	justify-content: center;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #2980b9;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	cursor: pointer;
+}
+
+.project-link:hover {
+	color: #1f6691;
 }
 
 .project-link-icon {
-	padding-left: 5px;
-	font-size: 13px;
-}
-
-.project-link-text {
-	padding-left: 20px;
-	font-weight: 700;
-}
-
-@media (max-width: 600px) {
-	.project {
-		height: 300px;
-	}
+	margin-right: 6px;
 }

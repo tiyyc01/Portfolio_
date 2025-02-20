@@ -1,5 +1,3 @@
-@import "../../data/styles.css";
-
 .homepage-logo-container {
 	display: flex;
 	justify-content: left;
@@ -11,26 +9,50 @@
 	padding-top: 25px;
 }
 
+/* Align About Section and Image */
 .homepage-first-area {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	/* Center content */
 	align-items: center;
+	gap: 50px;
+	/* Add spacing between sections */
+	max-width: 1200px;
+	margin: auto;
+	/* Center the entire section */
 }
 
+/* Keep About Section on Left but Shift Slightly Right */
 .homepage-first-area-left-side {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	max-width: 50%;
+	text-align: justify;
 }
 
-.homepage-title {
-	width: 85% !important;
-}
-
+/* Uniform Text Alignment */
 .homepage-subtitle {
-	width: 85% !important;
+	width: 100%;
+	max-width: 500px;
+	/* Ensures all lines are the same length */
+	line-height: 1.6;
 }
 
+/* Fix Extra Space in "Full Stack" Heading */
+.homepage-title {
+	width: auto !important;
+	/* Allow text to take only required space */
+	white-space: nowrap;
+	/* Prevent unwanted line breaks */
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: left;
+	color: var(--primary-color);
+}
+
+
+/* Keep Image Style Unchanged */
 .homepage-first-area-right-side {
 	display: flex;
 	align-items: center;
@@ -51,6 +73,25 @@
 	width: 100%;
 }
 
+/* Center Projects and Work Experience */
+.homepage-after-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.homepage-projects,
+.homepage-works {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding-top: 40px;
+}
+
+/* Social Icons */
 .homepage-socials {
 	display: flex;
 	justify-content: left;
@@ -69,82 +110,34 @@
 	color: var(--primary-color);
 }
 
-.homepage-after-title {
-	display: flex;
-}
-
-.homepage-projects {
-	flex-basis: 300px;
-	padding-top: 40px;
-}
-
-.homepage-articles {
-	flex-basis: 900px;
-	padding-top: 30px;
-	margin-left: -30px;
-}
-
-.homepage-article {
-	padding-bottom: 5px;
-}
-
-.homepage-works {
-	flex-basis: 600px;
-	padding-top: 30px;
-}
-
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 
 	.homepage-first-area-left-side {
-		display: flex;
-		flex-direction: column; /* Changed: set direction to column */
-		align-items: flex-start;
-		width: 100%;
-		order: 2;
+		max-width: 100%;
+		text-align: center;
+		align-items: center;
+		margin-bottom: 30px;
 	}
 
-	.homepage-title {
-		width: 100% !important;
-		margin-top: 20px;
-		order: 2;
-	}
-
+	.homepage-title,
 	.homepage-subtitle {
+		text-align: center;
 		width: 100% !important;
-		margin-top: 10px;
-		order: 3;
-	}
-
-	.homepage-first-area-right-side {
-		width: 100%;
-		order: 1;
 	}
 
 	.homepage-image-container {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		margin-left: 10px;
-		order: 1;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 
 	.homepage-after-title {
 		flex-direction: column;
-	}
-
-	.homepage-projects {
-		flex-basis: auto;
-	}
-
-	.homepage-articles {
-		flex-basis: auto;
-	}
-
-	.homepage-works {
-		flex-basis: auto;
-		margin-left: -25px;
-		margin-right: -25px;
+		align-items: center;
 	}
 }

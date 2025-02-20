@@ -6,7 +6,6 @@ import Homepage from "./pages/homepage";
 import About from "./pages/about";
 import Projects from "./pages/projects";
 import Work from "./pages/works";
-import ReadArticle from "./pages/readArticle";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
 
@@ -27,7 +26,6 @@ function App() {
 				<Route path="/about" element={<About />} />
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/work" element={<Work />} />
-				<Route path="/article/:slug" element={<ReadArticle />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>

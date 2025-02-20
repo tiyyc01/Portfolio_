@@ -34,8 +34,13 @@
 }
 
 .about-subtitle {
-	width: 80% !important;
+    width: 80% !important;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.7;
+    word-spacing: 1px;
 }
+
 
 .about-left-side {
 	display: flex;
@@ -115,5 +120,6 @@
 		width: 80%;
 	}
 }
+
 
   
